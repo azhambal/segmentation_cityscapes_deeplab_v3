@@ -1,0 +1,7 @@
+_target_: src.data.segmentation_datamodule.SegmentationDataModule
+data_dir: ${paths.data_dir}
+base_size: 520
+crop_size: 480
+batch_size: 4 # Needs to be divisible by the number of devices (e.g., if in a distributed setup)
+num_workers: 8
+pin_memory: False
